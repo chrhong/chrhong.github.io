@@ -18,10 +18,10 @@ echo -e "\e[31;40;5muse echo colorfully\e[0m"
 
 ## 二、你一定要用起来的两个文件！
 
-#### 1. `/home/username/.bash_profile`
+1. `/home/username/.bash_profile`
 登陆就会自动运行的文件。我们可以把每次登陆都需要做的事写个脚本然后加到这个文件中，比如配置开发环境。这样就省去了每次登陆都要自己手动配置的麻烦。
 
-#### 2. `/home/username/.bash_rc`
+2. `/home/username/.bash_rc`
 这是bash的配置文件，可以定义bash提示符还有自己的简易命令。
 ```
 # PS1定义了bash提示符格式 , 下面配置的格式为@host currentPath > 
@@ -31,8 +31,8 @@ alias shortcmd='yourscript.py action -param1 -param2'
 ```
 
 ## 三、学会操作字符串
-#### 1. `#` 号截取，删除匹配字符及左边字符
 
+1. `#` 号截取，删除匹配字符及左边字符
 `#` 删除从左往右第一个匹配的字符以及它左边的字符
 `##` 删除从左往右最后一个匹配字符以及它左边的字符
 ```
@@ -41,16 +41,16 @@ string="home/testUser/testfolder"
 new_String1=${string#*/}  #"testUser/testfolder"
 new_String2=${string##*/} #"testfolder"
 ```
-#### 2. `%` 号截取，删除匹配字符及右边字符
 
+2. `%` 号截取，删除匹配字符及右边字符
 `%` 删除从左往右第一个匹配的字符以及它右边的字符
 `%%` 删除从左往右最后一个匹配的字符以及它右边的字符
 ```
 new_String3=${string%/*}    #"home"
 new_String4=${string%%/*}   #"home/testUser"
 ```
-#### 3. 字符编号截取  `${string:N1:N2}`
 
+3. 字符编号截取  `${string:N1:N2}`
 N1 : 从第几个字符开始，>= 0 从左边开始，< 0 (0-N)从右边开始
 N2 : 需要截取的字符个数， 缺省时为截取到字符串最后（右）
 ```
@@ -59,18 +59,20 @@ new_String6=${string:0-6:4} #"fold"
 new_String7=${string:0-6}   #"folder"
 new_String8=${string:6}     #"/testUser/testfolder"
 ```
-#### 4. 字符拼接  `${string1}${string2}`
+
+4. 字符拼接  `${string1}${string2}`
 ```
 new_String9=${new_String7}${new_String8}  #"folder/testUser/testfolder"
 ```
 
 ## 四、通过 expect 实现自动远程登陆的模板
 
-#### 1.学会在 shell 脚本执行时读取密码而不是把密码直接赋值给一个变量
+1.学会在 shell 脚本执行时读取密码而不是把密码直接赋值给一个变量
 ```
 read -p "Your Passwd: " -s PASSWARD #变量PASSWARD存放输入的密码
 ```
-#### 2.在 shell 中插入使用 expect
+
+2.在 shell 中插入使用 expect
 ```
 expect<<EOF
 ...
@@ -79,7 +81,7 @@ expect<<EOF
 EOF
 ```
 
-#### 3.expect自动登陆不退出
+3.expect自动登陆不退出
 ```
 set timeout 10 #timeout is 10s
 spawn ssh $USER@$SERVER
@@ -97,7 +99,7 @@ expect {
 interact
 ```
 
-#### 4.expect自动登陆执行指定命令并退出
+4.expect自动登陆执行指定命令并退出
 ```
 spawn ssh $USER@$SERVER
 expect {
