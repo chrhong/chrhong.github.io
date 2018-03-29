@@ -97,6 +97,12 @@ live2d:
     opacityDefault: 0.7
     opacityOnHover: 0.2
 
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
+
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:

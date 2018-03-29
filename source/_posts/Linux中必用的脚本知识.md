@@ -2,6 +2,10 @@
 title: Linux中必用的脚本知识
 date: 2018-03-22 21:35:37
 tags:
+    - Linux
+    - Script
+categories:
+    - Linux Basic
 ---
 
 ## 一、如何打出花样日志？
@@ -15,7 +19,7 @@ echo -e "\e[31;40;5muse echo colorfully\e[0m"
 * 背景色: default=0,[40-47] = [黑色，红色，绿色，黄色，蓝色，洋红，青色，白色]
 * 0 关闭所有属性、1 粗体、4 下划线、5 闪烁、7 反显
 以上各参数均可以同时使用，但是颜色重复使用时以最后一个为准。
-
+<!-- more -->
 ## 二、你一定要用起来的两个文件！
 
 1. `/home/username/.bash_profile`
