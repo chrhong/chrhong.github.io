@@ -324,9 +324,9 @@
 
           
 
-    
-    <div id="gitalk-container"></div>
   
+    <div id="gitalk-container"></div>
+
   
 
 
@@ -597,6 +597,25 @@
 
 
 
+
+
+
+	<link rel="stylesheet" href="/css/gitalk.css">
+  <script src="/js/src/gitalk.min.js"></script>
+
+  <script type="text/javascript">
+		 var gitalk = new Gitalk({
+		   clientID: '37840e3b83160c7182dc',
+		   clientSecret: 'ac0117918b9450a0afbc5deee00d2fe2bb76ae4e',
+		   repo: 'chrhong.github.io',
+		   owner: 'chrhong',
+		   admin: ['chrhong'], 
+		   id: location.pathname,
+		   distractionFreeMode: 'true'
+		 })
+
+		 gitalk.render('gitalk-container')           
+  </script>
 
 
 
