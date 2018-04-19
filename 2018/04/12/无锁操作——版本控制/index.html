@@ -788,16 +788,17 @@
 
 
 
-	<link rel="stylesheet" href="/css/gitalk.css">
-  <script src="/js/src/gitalk.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+  <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
 
   <script type="text/javascript">
-		 var gitalk = new Gitalk({
+		 const gitalk = new Gitalk({
 		   clientID: '37840e3b83160c7182dc',
 		   clientSecret: 'ac0117918b9450a0afbc5deee00d2fe2bb76ae4e',
 		   repo: 'chrhong.github.io',
 		   owner: 'chrhong',
-		   admin: ['chrhong'], 
+		   admin: 'chrhong'.split(','),
 		   id: location.pathname,
 		   distractionFreeMode: 'true'
 		 })
