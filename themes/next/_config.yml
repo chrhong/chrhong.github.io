@@ -423,7 +423,6 @@ gitalk:
   owner: chrhong
   admin: chrhong
   distractionFreeMode: true
-  perPage: 10
 
 # Baidu Share
 # Available value:

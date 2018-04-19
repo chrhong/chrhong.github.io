@@ -11,7 +11,6 @@
 		   owner: '{{ theme.gitalk.owner }}',
 		   admin: '{{theme.gitalk.admin}}'.split(','),
 		   id: decodeURI(location.pathname),
-			 perPage: '{{ theme.gitalk.perPage }}',
 		   distractionFreeMode: '{{ theme.gitalk.distractionFreeMode }}'
 		 })
 
