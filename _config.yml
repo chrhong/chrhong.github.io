@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: L O C K L E S S
+title: L o C K L e S S
 subtitle: chrhong's blog
 description: life is short, code is long.
 author: chrhong
@@ -12,7 +12,7 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://shanha.top
+url: http://lockless.top
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
