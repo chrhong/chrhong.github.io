@@ -11,8 +11,8 @@ categories:
 
 [Docker](https://www.docker.com/) 是基于 Go 语言实现的开源容器项目。早期 Docker 直接基于 LXC 实现，0.9 版后 Docker 开发了 libcontainer 项目，作为更广泛的容器驱动实现。Docker 通过引入分层文件系统构建和高效的镜像机制，降低了迁移难度。可以这样简单的理解，相比于 LXC，Docker 是一种更高层次的多功能的容器管理工具。
 
-![LXC 和 Docker 的区别](difference.png)
-<!-- more -->
+![LXC 和 Docker 的区别](difference.png)<!-- more -->
+
 ### Docker 优势
 
 1. 更快速的交付和部署
