@@ -6,5 +6,4 @@ Blog to record the coding experience
 npm install hexo
 npm install
 npm install hexo-deployer-git --save
-npm install hexo-asset-image --save
 ```
